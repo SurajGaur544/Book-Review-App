@@ -167,4 +167,8 @@ class AccountController extends Controller
 
         return "<h1>here process update password</h1>";
     }
+
+    public function about(){
+        return view('account.about');
+    }
 }

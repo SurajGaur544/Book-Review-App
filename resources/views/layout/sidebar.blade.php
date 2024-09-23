@@ -39,7 +39,7 @@
                 <a href="{{ route('account.logout') }}">Logout</a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('about') }}">Developer Page</a>
+                <a href="{{ route('account.about') }}">More...</a>
             </li>                           
         </ul>
     </div>

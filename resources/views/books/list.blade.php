@@ -9,7 +9,7 @@
             <div class="col-md-9">
                 @include('layout.message')
                 <div class="card border-0 shadow">
-                    <div class="card-header  text-white  bold size-32" style="background-color: #1e90ff;">
+                    <div class="card-header  text-white  bold " style="background-color: #1e90ff;">
                         Books
                     </div>
                     <div class="card-body pb-0">      

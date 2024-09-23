@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('main')
-<div class="parent-div">
+<div id="parent-div">
     <div>
         <h1>This is about of developer page</h1>
     </div>

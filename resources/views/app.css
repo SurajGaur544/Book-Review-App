@@ -102,9 +102,11 @@ body{
     font-weight: 500;
 }
 
-.parent-div{
+#parent-div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-decoration: #1e90ff;
+    
 }

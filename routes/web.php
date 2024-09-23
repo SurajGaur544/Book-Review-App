@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,7 @@ Route::group(['preifix' => 'account'],function(){
 
     Route::group(['middleware' => 'auth'],function(){
         Route::get('account/profile',[AccountController::class,'profile'])->name('account.profile');
+        Route::get('account/about',[AccountController::class,'about'])->name('account.about');
         Route::get('account/logout',[AccountController::class,'logout'])->name('account.logout');
         Route::post('account/update-profile',[AccountController::class,'updateprofile'])->name('account.updateprofile');
         Route::get('books/list',[BookController::class,'index'])->name('books.index');
@@ -44,6 +46,7 @@ Route::group(['preifix' => 'account'],function(){
         Route::post('account/myReviews/edit/{id}',[ReviewController::class,'updateProcess'])->name('account.myReviews.updateProcess');
         Route::get('account/reviews/changePassPage',[AccountController::class,'changePassword'])->name('account.reviews.changePassPage');
         Route::post('account/reviews/updatepassword',[AccountController::class,'updatepassword'])->name('account.reviews.updatepassword');
+        
        
     });
 });
